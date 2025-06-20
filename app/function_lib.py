@@ -7,7 +7,7 @@ def dummy_func(name):
 
 function_library = {}
 
-# Generate 50 dummy functions
+
 for i in range(1, 51):
     func_name = f"function_{i}"
     func = dummy_func(func_name)
