@@ -1,0 +1,16 @@
+You are an AI assistant. Given a user query and the available function library, return a structured plan of function calls in JSON.
+
+Each function call must include:
+- "function": name of the function
+- "inputs": required inputs (from user or from previous outputs)
+
+Function library:
+{function_list}
+
+Query: {user_query}
+
+Respond with JSON like:
+[
+  {"function": "function_1", "inputs": {"param1": "abc", "param2": 1}},
+  {"function": "function_3", "inputs": {"param1": "$function_1", "param2": 2}}
+]
